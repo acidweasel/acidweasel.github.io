@@ -1,8 +1,12 @@
 <html>
   <head>
-    <script src="https://github.com/acidweasel/bluetooth-terminal/blob/main/src/BluetoothTerminal.js"></script>
      <script>
-       return("!!!");
+      var xhr = new XMLHttpRequest();
+        xhr.open("POST", 'https://acidweasel.github.io/', true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify({
+          test: "!!!"
+       }));
     </script>  
     <style>
       .button{
